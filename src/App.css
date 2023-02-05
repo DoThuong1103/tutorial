@@ -28,24 +28,22 @@ ul {
 button {
   border-radius: 5px;
   padding: 17px 30px;
-  background-color: #27ae60;
+  background: #27ae60;
+  border: none;
   color: #fff;
   cursor: pointer;
   font-weight: bold;
-  border: none;
 }
-
 button i {
   margin-right: 5px;
 }
-
 .heading {
   text-align: center;
   width: 60%;
   margin: auto;
 }
 .heading h1 {
-  color: #2f3954;
+  color: #2d3954;
   font-weight: 600;
   text-transform: capitalize;
   font-size: 35px;
@@ -57,13 +55,12 @@ textarea,
 input {
   border: none;
   outline: none;
-  background-color: none;
+  background: none;
 }
-
 .background {
   padding: 80px 0;
   position: relative;
-  background-color: #f7f9fc;
+  background: #f7f9fc;
 }
 
 .grid5 {
@@ -75,7 +72,6 @@ label {
   color: #2d3954;
   font-size: 14px;
 }
-
 .mtop {
   margin-top: 50px;
 }
@@ -83,11 +79,9 @@ h4 {
   font-weight: 500;
   margin-top: 10px;
 }
-
 .shadow {
-  box-shadow: 0 0 20px 0 rgb(112 121 138 /18%);
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
 }
-
 .padding {
   padding: 80px 0;
 }
@@ -96,23 +90,24 @@ h4 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
-
 img {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
-
 .btn2 {
   border-radius: 50px;
   font-size: 20px;
 }
-
 .grid4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
 }
-
+.btn3 {
+  background: #ff6922;
+  border-radius: 50px;
+}
 .btn4 {
   background-color: #000;
   color: #fff;
@@ -126,7 +121,6 @@ img {
   border: 5px solid #27ae601f;
   background: #fff;
 }
-
 .back {
   height: 40vh;
   position: relative;
@@ -139,16 +133,14 @@ img {
   z-index: -1;
   object-fit: cover;
 }
-
 .back::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   height: 40vh;
-  background: rgba(17, 40, 72, 0.6);
+  background: rgba(17, 40, 72, 0.629);
   z-index: -1;
 }
 .back .container {
@@ -159,13 +151,12 @@ img {
   font-size: 40px;
   font-weight: 500;
 }
-
 .mb {
   margin-bottom: 80px;
 }
-@media screen and(max-width: 768px) {
-  .grid3,
+@media screen and (max-width: 800px) {
   .grid4,
+  .grid3,
   .grid5 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -175,9 +166,9 @@ img {
   .container {
     max-width: 90%;
   }
-  .back,
   .back::after,
-  .back img {
+  .back img,
+  .back {
     height: 30vh;
   }
 }
